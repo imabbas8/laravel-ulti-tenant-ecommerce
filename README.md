@@ -1,196 +1,199 @@
-> ## 🚀 This Project — Quick Start
-> This is a configured, ready-to-demo store. **Full setup & flow → [SETUP_GUIDE.md](SETUP_GUIDE.md)**
->
-> **Run:** double-click `start.bat` (starts MySQL + server), then open:
-> - **Storefront:** http://localhost:8000
-> - **Admin:** http://localhost:8000/admin/login — `admin@example.com` / `admin123`
->
-> Database: **MySQL** (`bagisto`). 11 sample products are seeded & indexed.
-
----
-
 <p align="center">
   <a href="http://www.bagisto.com">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bagisto/temp-media/0b0984778fae92633f57e625c5494ead1fe320c3/dark-logo-P5H7MBtx.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://bagisto.com/wp-content/themes/bagisto/images/logo.png">
-      <img src="https://bagisto.com/wp-content/themes/bagisto/images/logo.png" alt="Bagisto logo">
+      <img src="https://bagisto.com/wp-content/themes/bagisto/images/logo.png" alt="Bagisto logo" width="220">
     </picture>
   </a>
 </p>
 
-<p align="center">
-    <a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/d/total.svg" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/v/stable.svg" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/license.svg" alt="License"></a>
-    <a href="#backers"><img src="https://opencollective.com/bagisto/backers/badge.svg" alt="Backers on Open Collective"></a>
-    <a href="#sponsors"><img src="https://opencollective.com/bagisto/sponsors/badge.svg" alt="Sponsors on Open Collective"></a>
-    <a href="https://www.codetriage.com/bagisto/bagisto"><img src="https://www.codetriage.com/bagisto/bagisto/badges/users.svg" alt="Open Source Helpers"></a>
-</p>
+<h1 align="center">Bagisto E-Commerce Store — Project</h1>
 
 <p align="center">
-    <a href="https://twitter.com/intent/follow?screen_name=bagistoshop"><img src="https://img.shields.io/twitter/follow/bagistoshop?style=social"></a>
-    <a href="https://www.youtube.com/channel/UCbrfqnhyiDv-bb9QuZtonYQ"><img src="https://img.shields.io/youtube/channel/subscribers/UCbrfqnhyiDv-bb9QuZtonYQ?style=social"></a>
+  A ready-to-demo online store built on <b>Bagisto v2.3.19</b> (Laravel 11 e-commerce framework).<br>
+  Pre-configured, seeded with sample data, and running on MySQL — just start it and go.
 </p>
 
-<p align="center">
-    ➡️ <a href="https://bagisto.com/en/">Website</a> | <a href="https://devdocs.bagisto.com/">Documentation</a> | <a href="https://devdocs.bagisto.com/2.3/introduction/installation.html#installation">Installation Guide</a> | <a href="https://devdocs.bagisto.com/2.3/introduction/docker.html">Docker Installation</a>  | <a href="https://forums.bagisto.com/">Forums</a> | <a href="https://www.facebook.com/groups/bagisto/">Community</a> ⬅️
-</p>
+---
 
-<p align="center">
-    <img src="https://flagicons.lipis.dev/flags/4x3/sa.svg" alt="Arabic" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/bd.svg" alt="Bengali" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/es-ct.svg" alt="Catalan" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/de.svg" alt="German" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="English" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/es.svg" alt="Spanish" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/ir.svg" alt="Persian" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="French" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/il.svg" alt="Hebrew" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/in.svg" alt="Hindi" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/id.svg" alt="Indonesian" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/it.svg" alt="Italian" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/jp.svg" alt="Japanese" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/nl.svg" alt="Dutch" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/pl.svg" alt="Polish" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/br.svg" alt="Portuguese (Brazil)" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/ro.svg" alt="Romanian" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/ru.svg" alt="Russian" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/lk.svg" alt="Sinhalese" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/tr.svg" alt="Turkish" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/ua.svg" alt="Ukrainian" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/cn.svg" alt="Chinese (Simplified)" width="24" style="display:block; margin:6px auto;">
-</p>
+## 🚀 Quick Start (run in 1 step)
 
-<a href="https://www.youtube.com/watch?v=OHbte7hdxYU">
-    <img class="flag-img" src="https://raw.githubusercontent.com/bagisto/temp-media/master/bagisto-featured.png" alt="Chinese" width="100%">
-</a>
+> **Double-click [`start.bat`](start.bat)** — it starts MySQL + the PHP server, then opens two windows and prints the URLs/login.
 
-# Introduction
+Then open:
 
-Bagisto is an opensource [laravel eCommerce](https://www.bagisto.com/) framework built on some of the hottest technologies such as [Laravel](https://laravel.com/) (a [PHP](https://secure.php.net/) framework) and [Vue.js](https://vuejs.org/) a progressive Javascript framework.
+| What         | URL                                  |
+|--------------|--------------------------------------|
+| 🛒 Storefront | http://localhost:8000                |
+| 🔑 Admin Panel | http://localhost:8000/admin/login   |
 
-Bagisto can help you cut down your time, cost, and workforce for building online stores or migrating from physical stores to the ever-demanding online world. Your business—whether small or huge—can benefit. The best part, it's straightforward to set it up!
+**Admin login**
+- Email: `admin@example.com`
+- Password: `admin123`
 
-![Repo Stats](https://raw.githubusercontent.com/bagisto/temp-media/master/stats.webp)
+> Demo data already loaded: **35 products** (with images), **9 categories**, **15 customers**, and store branding. The home page shows full Featured / New Products carousels.
 
-# Getting Started
+📖 **Full walkthrough (customer + admin flow, architecture):** [SETUP_GUIDE.md](SETUP_GUIDE.md)
 
-![Getting Started](https://raw.githubusercontent.com/bagisto/temp-media/master/geting-starded.png)
+---
 
-[Install Bagisto](https://devdocs.bagisto.com/2.3/introduction/installation.html#install-using-gui-installer) with or without Composer (Check [Requirement Details](https://bagisto.com/en/download/))
+## 🧰 Tech Stack
 
-Follow the [Getting Started with Bagisto](https://www.youtube.com/watch?v=s_DhQrjK8Tw&list=PLe30vg_FG4OS3BU8rHUKQZ2mnX45xwSMc) Tutorial
+| Layer       | Technology                                  |
+|-------------|---------------------------------------------|
+| Framework   | Laravel 11.48                               |
+| E-commerce  | Bagisto 2.3.19                              |
+| Language    | PHP 8.2                                     |
+| Database    | **MySQL 8.0** (Laragon build)               |
+| Frontend    | Blade + Vite (prebuilt assets, Tailwind)    |
+| Admin UI    | Bagisto Admin (Vue islands + Blade)         |
 
-You can browse through the Free [Live Demo](https://demo.bagisto.com/)
+> **Why MySQL and not SQLite?** Bagisto is **not SQLite-compatible at runtime** — its
+> admin data grids, dashboard reporting, and product indexers use MySQL-only SQL
+> (`CONCAT`, `GROUP_CONCAT`, `DATE_FORMAT`). On SQLite the install fails on the
+> `add_logo_path_column_to_locales` migration. **MySQL is the correct, stable choice.**
 
-## ☁️ Cloud Installation via Amazon AMI
+---
 
-You can also deploy Bagisto quickly using our pre-configured Amazon Machine Image (AMI) available on the AWS Marketplace:
+## ✅ Prerequisites
 
-👉 [**Launch Bagisto on AWS**](https://aws.amazon.com/marketplace/pp/prodview-r3xv62axcqkpa)
+Already present on this machine — listed here in case you set up a fresh PC:
 
-This AMI allows you to get started with Bagisto on a cloud environment without manual setup. Ideal for scalable production or testing environments.
+- **PHP 8.2** with extensions: `pdo_mysql`, `intl`, `gd`, `mbstring`, `openssl`, `curl`
+- **Composer 2.x** (dependencies already installed in `/vendor`)
+- **MySQL 8.0** (bundled with **Laragon** at `C:\laragon\bin\mysql\mysql-8.0.40-winx64`)
 
-# Accelerate Your Online Store Launch with the Bagisto Starter Pack!
+The `bagisto` database is already created and fully seeded — **no fresh install needed**.
 
-Empower your e-commerce journey with the [Bagisto Starter Pack](https://store.webkul.com/bagisto-starter-pack.html), streamlining setup and integration for a seamless online store launch. Get ready to unlock success in the digital marketplace! 
+---
 
-# Open Source B2B eCommerce Platform
+## ▶️ Running Manually (instead of `start.bat`)
 
-The [B2B eCommerce Platform](https://bagisto.com/en/b2b-commerce-platform/) enhances your Bagisto store with advanced Business-to-Business (B2B) features. It enables company-based purchasing, multi-user access, quote negotiation, and procurement management — empowering businesses to handle B2B workflows efficiently within a single platform.
+Open **two terminals**:
 
-![Bagisto B2B Ecommerce Image](https://github.com/bagisto/temp-media/blob/master/intro-banner.webp)
+```bash
+# Terminal 1 — start MySQL (or just open Laragon → "Start All")
+"C:\laragon\bin\mysql\mysql-8.0.40-winx64\bin\mysqld.exe" --datadir=C:/laragon/data/mysql-8 --port=3306 --console
+```
 
-# Multi Vendor Marketplace
+```bash
+# Terminal 2 — start Bagisto
+cd "D:\github project\bagisto"
+php artisan serve --host=127.0.0.1 --port=8000
+```
 
-[Multi Vendor Marketplace](https://bagisto.com/en/laravel-multi-vendor-marketplace/) transforms a standard store into a complete marketplace, allowing the admin to manage sellers, commissions, product approvals, and order handling, while giving vendors a dedicated dashboard to manage their catalog, orders, and transactions.
+> ⚠️ MySQL **must be running first**, otherwise the server throws `Can't connect to MySQL (10061)`.
 
-![Multi Vendor Marketplace Image](https://github.com/bagisto/temp-media/blob/master/multi-vendor-marketplace.webp)
+---
 
-# Multi Tenant eCommerce
+## ⚙️ Configuration & Keys (`.env`)
 
-[Multi Tenant eCommerce](https://bagisto.com/en/laravel-multi-tenant-saas/) in Bagisto allows businesses to build a SaaS-based marketplace platform where multiple vendors or merchants can create and manage their own individual stores under a single system.
+The project ships with a working [`.env`](.env). The values that matter:
 
-![Multi Tenant eCommerce Image](https://github.com/bagisto/temp-media/blob/master/multi-tenant.webp)
+```env
+APP_NAME=Bagisto
+APP_URL=http://localhost:8000
+APP_ADMIN_URL=admin            # admin panel lives at /admin
+APP_KEY=base64:...             # already generated (see below if missing)
 
-# POS 
+# Database — Laragon MySQL, default root / no password
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=bagisto
+DB_USERNAME=root
+DB_PASSWORD=                   # Laragon default = empty
 
-[Point of Sale](https://bagisto.com/en/laravel-pos/) system manages retail operations efficiently, handling inventory management and fast customer checkout for your store.
+# Mail — written to storage/logs, no SMTP needed for the demo
+MAIL_MAILER=log
+```
 
-![POS Image](https://github.com/bagisto/temp-media/blob/master/pos.webp)
+### Setting up `.env` on a fresh machine
 
-# Headless Commerce
+```bash
+# 1. Copy the template
+copy .env.example .env
 
-The power of headless laravel commerce now comes to Bagisto enabling you to experience seamless and easily scalable storefront performance. Backed by some of the hottest tech stacks, Bagisto commerce can now be used to build powerful headless commerce solutions offering blazing-fast speed and easy customization powered by Next.js
+# 2. Generate the app encryption key (fills APP_KEY)
+php artisan key:generate
 
-## Next.js Commerce
+# 3. Set the DB values above, then install Bagisto (creates tables + seeds data)
+php artisan bagisto:install
+```
 
-![Next.js Logo](https://raw.githubusercontent.com/bagisto/temp-media/master/next.png)
+### Optional keys (only if you enable these features)
 
-Develop and deploy your next headless commerce storefronts with Next JS and Bagisto: [https://github.com/bagisto/nextjs-commerce](https://github.com/bagisto/nextjs-commerce)
+| Feature                  | Keys to fill in `.env`                                              |
+|--------------------------|--------------------------------------------------------------------|
+| Real email (SMTP)        | `MAIL_MAILER=smtp`, `MAIL_HOST`, `MAIL_PORT`, `MAIL_USERNAME`, `MAIL_PASSWORD` |
+| Amazon S3 file storage   | `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_BUCKET`, `AWS_DEFAULT_REGION` |
+| Redis cache/queue        | `CACHE_STORE=redis`, `REDIS_HOST`, `REDIS_PORT`, `REDIS_PASSWORD`   |
+| Payment gateways         | Configure in **Admin → Settings → Configuration → Payment Methods** (PayPal etc.) |
 
-# Open Source Mobile eCommerce
+> 💳 The default payment method is **Cash on Delivery**, which works **without any gateway keys** — so checkout is fully testable out of the box.
 
-Revolutionize Your Online Store with Bagisto's Open Source eCommerce Mobile 
+> 🔐 The `APP_KEY` and credentials in this repo are for **local demo only**. Generate fresh ones and never commit real secrets for production.
 
-![Mobile View Example Screens](https://raw.githubusercontent.com/bagisto/temp-media/master/open-source-ecommerce-mobile.png)
+---
 
-Mobile eCommerce powered by Flutter & Laravel: https://github.com/bagisto/opensource-ecommerce-mobile-app
+## 🧪 Useful Commands
 
-# AI Powered eCommerce
+```bash
+# Re-run product indexing (after adding/editing products)
+php artisan indexer:index --mode=full
 
-You can integrate popular large language models like GPT-5, Gemini 3, Mistral, and LLaMA 4, Grok (xAI),GLM 4.6,Kimi-K2, Qwen 3, Deepseek etc to build [AI-powered eCommerce](https://bagisto.com/en/extensions/laravel-chatbot-using-openai-chatgpt-llm/) applications with Bagisto. Some of the popular use cases where you can make use of LLMs to build AI apps are chatbot, automated product descriptions, customer support, search, and recommendations.
+# Clear all caches (config, route, view)
+php artisan optimize:clear
 
-![AI Powered eCommerce Examples](https://raw.githubusercontent.com/bagisto/temp-media/master/ai_powered_ecommerce.png)
+# Clear only .env config cache (after editing .env)
+php artisan config:clear
 
-You can incorporate LLM API with your bagisto applications to send and receive queries and ensure proper error handling and rate limiting to prevent overuse of the API
+# Reinstall from scratch — DROPS all data and re-seeds
+php artisan bagisto:install
 
-# Decentralised eCommerce
+# Generate extra fake products for testing
+php artisan bagisto:fake
+```
 
-Build [decentralised applications](https://bagisto.com/en/services/blockchain-commerce/) with Bagisto on popular blockchains like Ethereum and Solana by integrating smart contracts with the eCommerce platform. You can have decentralised marketplaces, [NFT marketplaces](https://bagisto.com/en/nft-marketplace/), and decentralised e-signing with the laravel eCommerce system.
+---
 
-![Decentralized Ecommerce Example Screens](https://raw.githubusercontent.com/bagisto/temp-media/master/decentralised-ecommerce.png)
+## 🩺 Troubleshooting
 
-# Commerce For Every Need
+| Problem | Fix |
+|---------|-----|
+| `Can't connect to MySQL (10061)` | MySQL isn't running — run `start.bat` or Laragon → Start All. |
+| Storefront shows no products | Run `php artisan indexer:index --mode=full`. |
+| Styles look broken | Assets are prebuilt in `public/themes/...`; run `php artisan optimize:clear`. |
+| Changed `.env` not taking effect | Run `php artisan config:clear`. |
+| Port 8000 busy | `php artisan serve --port=8001` and update `APP_URL` in `.env`. |
 
-![Commerce Store Examples](https://raw.githubusercontent.com/bagisto/temp-media/master/every-need.png)
+---
 
-With Bagisto, you can easily create use cases for various commerce needs like Marketplaces, PWA, Native Mobile Apps, Multi-Tenants systems, Blockchain and many more.
+## 🗂️ Project Structure (where things live)
 
-# Built In Extensions
+Bagisto is modular — each feature is a package under `packages/Webkul/`:
 
-![200+ Prebuilt Extensions](https://raw.githubusercontent.com/bagisto/temp-media/master/built_in_extension.png)
+| Package     | Responsibility                                |
+|-------------|-----------------------------------------------|
+| `Shop`      | Storefront (landing, product page, cart)      |
+| `Admin`     | Admin panel, data grids, dashboard reporting  |
+| `Product`   | Product models, repositories, **indexers**    |
+| `Checkout`  | Cart & checkout logic                         |
+| `Sales`     | Orders, invoices, shipments, refunds          |
+| `Customer`  | Customer accounts, addresses, wishlist        |
+| `Core`      | Channels, currencies, locales, config         |
+| `Installer` | `php artisan bagisto:install` + seeders       |
 
-Make use of 100+ Bagisto pre-built extensions from [Bagisto Extension Markeptlace](https://bagisto.com/en/extensions/)
+- Storefront views: `packages/Webkul/Shop/src/Resources/views/`
+- Admin views: `packages/Webkul/Admin/src/Resources/views/`
+- Compiled assets: `public/themes/shop/default/build` and `public/themes/admin/default/build`
 
-# Community
+---
 
-![Forum and Facebook Communities](https://raw.githubusercontent.com/bagisto/temp-media/master/community.png)
+## 📚 About Bagisto
 
-Get Bagisto support on [Facebook Group](https://www.facebook.com/groups/bagisto) and [Forum](https://forums.bagisto.com/)
-Would like to help us build the most developer-friendly E-Commerce platform? Start by reading our [Contributing Guide](https://github.com/bagisto/bagisto/blob/master/.github/CONTRIBUTING.md)!
+This project is built on **[Bagisto](https://bagisto.com/)**, an open-source Laravel +
+Vue.js e-commerce framework (MIT licensed). For official docs and features:
 
-# License
-Bagisto is a fully open-source Laravel eCommerce framework that will always remain free under the [MIT License](https://github.com/bagisto/bagisto/blob/2.3/LICENSE).
-
-# Security Vulnerabilities
-If you think that you have found a security issue in Bagisto, please do not use the issue tracker and do not post it publicly. Instead, all security issues must be sent to [mailto:support@bagisto.com](mailto:support@bagisto.com).
-
-# Contributors
-
-This project is on [Open Collective](https://opencollective.com/bagisto), and it exists thanks to the people who contribute.
-
-<a href="https://github.com/bagisto/bagisto/graphs/contributors"><img src="https://opencollective.com/bagisto/contributors.svg?width=890&button=false"/></a>
-
-# Backers
-
-Thank you to all our backers! 🙏
-
-<a href="https://opencollective.com/bagisto" target="_blank"><img src="https://opencollective.com/bagisto/backers.svg?width=890"></a>
-
-# Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
-
-<a href="https://opencollective.com/bagisto" target="_blank"><img src="https://opencollective.com/bagisto/sponsors.svg?width=890&isActive=true"></a>
+➡️ [Website](https://bagisto.com/en/) · [Documentation](https://devdocs.bagisto.com/) · [Live Demo](https://demo.bagisto.com/) · [Forums](https://forums.bagisto.com/)
